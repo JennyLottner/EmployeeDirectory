@@ -1,0 +1,272 @@
+[
+    {
+        "_id": "A1B2C3D4E5F6",
+        "name": "David Levi",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "B7C8D9E0F1G2",
+        "name": "Rachel Cohen",
+        "workTitle": "Product Manager",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "H3I4J5K6L7M8",
+        "name": "Yossi Bar",
+        "workTitle": "UX Designer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=PastelBlue&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "N9O0P1Q2R3S4",
+        "name": "Sara Gold",
+        "workTitle": "DevOps Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "T5U6V7W8X9Y0",
+        "name": "Michael Rosen",
+        "workTitle": "Data Scientist",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "Z1A2B3C4D5E6",
+        "name": "Noa Amit",
+        "workTitle": "Frontend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraightStrand&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "F7G8H9I0J1K2",
+        "name": "Amit Shalev",
+        "workTitle": "Backend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairNotTooLong&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "L3M4N5O6P7Q8",
+        "name": "Omer Katz",
+        "workTitle": "QA Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Black"
+    },
+    {
+        "_id": "R9S0T1U2V3W4",
+        "name": "Shira Levi",
+        "workTitle": "Business Analyst",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Blank&hairColor=BlondeGolden&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Blue01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "X5Y6Z7A8B9C0",
+        "name": "Adam Klein",
+        "workTitle": "Full Stack Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "a1b2c3d4e5f6",
+        "name": "John Smith",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Gray01&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "g7h8i9j0k1l2",
+        "name": "Emily Johnson",
+        "workTitle": "Product Designer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "m3n4o5p6q7r8",
+        "name": "Olivia Brown",
+        "workTitle": "Data Scientist",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Black"
+    },
+    {
+        "_id": "s9t0u1v2w3x4",
+        "name": "Liam O\"Connor",
+        "workTitle": "Backend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=SilverGray&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "y5z6a7b8c9d0",
+        "name": "Charlotte Green",
+        "workTitle": "Frontend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "e1f2g3h4i5j6",
+        "name": "Daniel Schmidt",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "k7l8m9n0o1p2",
+        "name": "Jacob Martin",
+        "workTitle": "DevOps Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads02&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown"
+    },
+    {
+        "_id": "q3r4s5t6u7v8",
+        "name": "Sophia Rossi",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "w9x0y1z2a3b4",
+        "name": "Benjamin Müller",
+        "workTitle": "Business Analyst",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelGreen&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "c5d6e7f8g9h0",
+        "name": "Lucas Garcia",
+        "workTitle": "Full Stack Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesarSidePart&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=Blank&clotheType=CollarSweater&clotheColor=PastelBlue&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "i1j2k3l4m5n6",
+        "name": "Alexander Williams",
+        "workTitle": "UX Designer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelGreen&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "o7p8q9r0s1t2",
+        "name": "Emma Wilson",
+        "workTitle": "Project Manager",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "u3v4w5x6y7z8",
+        "name": "Ava Martinez",
+        "workTitle": "Frontend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairNotTooLong&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "z9a0b1c2d3e4",
+        "name": "Ella Novak",
+        "workTitle": "QA Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraightStrand&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "f5g6h7i8j9k0",
+        "name": "David Hughes",
+        "workTitle": "Backend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown"
+    },
+    {
+        "_id": "g0h1i2j3k4l5",
+        "name": "Isabella Fisher",
+        "workTitle": "Data Scientist",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "m6n7o8p9q0r1",
+        "name": "Mia Clark",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "s2t3u4v5w6x7",
+        "name": "Ethan Taylor",
+        "workTitle": "DevOps Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelGreen&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "y8z9a0b1c2d3",
+        "name": "Jack Harris",
+        "workTitle": "Frontend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads02&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=DarkBrown"
+    },
+    {
+        "_id": "e4f5g6h7i8j9",
+        "name": "Lucas Hall",
+        "workTitle": "Backend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "k0l1m2n3o4p5",
+        "name": "Amelia King",
+        "workTitle": "Product Manager",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "q6r7s8t9u0v1",
+        "name": "Sophie Bennett",
+        "workTitle": "QA Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Black"
+    },
+    {
+        "_id": "w2x3y4z5a6b7",
+        "name": "Henry Adams",
+        "workTitle": "Full Stack Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=SilverGray&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "c8d9e0f1g2h3",
+        "name": "Chloe Scott",
+        "workTitle": "UX Designer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "i4j5k6l7m8n9",
+        "name": "Liam Mitchell",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Gray01&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "o0p1q2r3s4t5",
+        "name": "William Turner",
+        "workTitle": "Backend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "u6v7w8x9y0z1",
+        "name": "James Walker",
+        "workTitle": "Frontend Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Black"
+    },
+    {
+        "_id": "a2b3c4d5e6f7",
+        "name": "Grace Morgan",
+        "workTitle": "Data Scientist",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Blank&hairColor=BlondeGolden&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Blue01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "g8h9i0j1k2l3",
+        "name": "Olivia Evans",
+        "workTitle": "Business Analyst",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairNotTooLong&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "m4n5o6p7q8r9",
+        "name": "Emily Collins",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraightStrand&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "s0t1u2v3w4x5",
+        "name": "Benjamin Phillips",
+        "workTitle": "DevOps Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Auburn&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
+        "_id": "y6z7a8b9c0d1",
+        "name": "Charlotte Turner",
+        "workTitle": "Full Stack Developer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale"
+    },
+    {
+        "_id": "e2f3g4h5i6j7",
+        "name": "Noah Robinson",
+        "workTitle": "Product Manager",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=PastelBlue&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+    },
+    {
+        "_id": "k8l9m0n1o2p3",
+        "name": "Lily White",
+        "workTitle": "UX Designer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+    },
+    {
+        "_id": "q4r5s6t7u8v9",
+        "name": "Mason Lewis",
+        "workTitle": "Software Engineer",
+        "imgUrl": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Heather&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    }
+]
