@@ -6,6 +6,7 @@ export const employeeService = {
     query,
     getById,
     save,
+    remove,
 }
 
 async function query() {
@@ -29,6 +30,10 @@ async function save(employee) {
     } else {
         return await storageService.post(STORAGE_KEY, employee)
     }
+}
+
+async function remove(employeeId) {
+    return await storageService.remove(STORAGE_KEY, employeeId)
 }
 
 async function _loadDemoEmployees() {
