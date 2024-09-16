@@ -9,15 +9,21 @@ export const employeeService = {
     remove,
 }
 
-async function query() {
+async function query(filterTxt = '') {
     try {
         let employees = await storageService.query(STORAGE_KEY)
         if (!employees) {
             employees = await _loadDemoEmployees()
             storageService.saveToStorage(STORAGE_KEY, employees)
         }
+        if (filterTxt) {
+            const regExp = new RegExp(filterTxt, 'i')
+            employees = employees.filter(employee =>
+                regExp.test(employee.name) || regExp.test(employee.workTitle)
+            )
+        }
         return employees
-    } catch (err) { console.log(err)}
+    } catch (err) { console.log(err) }
 }
 
 async function getById(employeeId) {
@@ -41,5 +47,5 @@ async function _loadDemoEmployees() {
         const response = await fetch('./src/data/demoEmployees.json')
         const demoEmployees = await response.json()
         return demoEmployees
-    } catch (err) { console.log(err)}
+    } catch (err) { console.log(err) }
 }
