@@ -1,0 +1,50 @@
+.search-bar {
+    margin-block-start: 0.6rem;
+    width: 90%;
+
+    gap: 0.6rem;
+
+    input {
+        flex-grow: 1;
+
+        height: 2.25rem;
+
+        padding-inline: 0.8rem;
+        border: none;
+        border-radius: 2.25rem;
+        outline: none;
+    }
+
+    .search-btn {
+        background-color: $site-turquoise;
+        border: none;
+        border-radius: 50%;
+        height: 2.25rem;
+        width: 2.25rem;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+@media (width > 500px) {
+    .search-bar {
+        width: 60%;
+
+    }
+}
+
+@media (width > 767px) {
+    .search-bar {
+        width: 50%;
+
+    }
+}
+
+@media (width > 1024px) {
+    .search-bar {
+        max-width: 500px;
+    }
+}

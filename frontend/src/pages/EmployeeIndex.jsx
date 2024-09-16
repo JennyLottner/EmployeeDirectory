@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { employeeService } from '../services/employee.local.service'
 import { utilService } from '../services/util.service'
 
+import { SearchBar } from '../cmps/SearchBar'
+
 export function EmployeeIndex() {
     const [employees, setEmployees] = useState([])
     const [filterTxt, setFilter] = useState('')
@@ -31,7 +33,14 @@ export function EmployeeIndex() {
         <section className='search-page flex column center'>
             <h1>Looking for an employee?</h1>
             <p>Click on the search bar to learn our suggestions</p>
-            <input type="text"  placeholder='Search...' onInput={onFilter}/>
+            <SearchBar onFilter={onFilter} />
+            {/* <ul>
+                {employees && employees.map(employee => (
+                    <li key={employee._id}>
+                        <strong>{employee.name}</strong> - {employee.workTitle}
+                    </li>
+                ))}
+            </ul> */}
         </section>
-    );
+    )
 }
