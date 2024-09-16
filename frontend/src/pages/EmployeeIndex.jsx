@@ -4,6 +4,7 @@ import { employeeService } from '../services/employee.local.service'
 import { utilService } from '../services/util.service'
 
 import { SearchBar } from '../cmps/SearchBar'
+import { EmployeeList } from '../cmps/EmployeeList'
 
 export function EmployeeIndex() {
     const [employees, setEmployees] = useState([])
@@ -34,13 +35,7 @@ export function EmployeeIndex() {
             <h1>Looking for an employee?</h1>
             <p>Click on the search bar to learn our suggestions</p>
             <SearchBar onFilter={onFilter} />
-            {/* <ul>
-                {employees && employees.map(employee => (
-                    <li key={employee._id}>
-                        <strong>{employee.name}</strong> - {employee.workTitle}
-                    </li>
-                ))}
-            </ul> */}
+            <EmployeeList employees={employees} />
         </section>
     )
 }
