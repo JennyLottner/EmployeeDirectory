@@ -1,0 +1,52 @@
+.employee-list-section {
+    width: calc(90% - 2.85rem);
+    height: fit-content;
+    color: black;
+    background-color: #f3f3f3;
+    padding: 0.1rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-inline-end: 0.85rem;
+    transform: translateY(-20px);
+    overflow: hidden;
+}
+
+.employee-list {
+    max-height: calc(100vh - 20rem);
+    padding-block-start: 1rem;
+    overflow-y: auto;
+    
+    gap: 0.1rem;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $site-turquoise;
+        border-radius: 1rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #D3D3D3;
+        border-radius: 1rem;
+    }
+
+    .no-results {
+        padding: 1rem;
+        background-color: #d9d9d9;
+    }
+}
+
+
+@media (width > 500px) {
+    .employee-list-section {
+        width: calc(60% - 2.85rem);
+    }
+}
+
+@media (width > 767px) {
+    .employee-list-section {
+        width: calc(50% - 2.85rem);
+        max-width: calc(500px - 2.85rem);
+    }
+}
