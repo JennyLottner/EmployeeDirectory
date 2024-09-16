@@ -4,19 +4,18 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import './style/main.css'
 
 import { EmployeeIndex } from './pages/EmployeeIndex'
+import { AppHeader } from './cmps/AppHeader'
 
 export function App() {
   return (
-    // <EmployeeIndex/>
     // <Provider store={store}>
     <Router>
-      {/* <AppHeader/> */}
-      <main>
+      <AppHeader/>
+
         <Routes>
           <Route path='/' element={<EmployeeIndex />} />
           {/* <Route path='/:employeeId' element={<EmployeeDetails />} /> */}
         </Routes>
-      </main>
     </Router>
     // </Provider>
   )
