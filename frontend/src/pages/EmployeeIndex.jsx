@@ -1,24 +1,17 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo } from 'react'
+import { useSelector } from 'react-redux'
 
-import { employeeService } from '../services/employee.local.service'
 import { utilService } from '../services/util.service'
+import { loadEmployees, setEmployeeFilter } from '../store/actions/employee.actions'
 
 import { SearchBar } from '../cmps/SearchBar'
 import { EmployeeList } from '../cmps/EmployeeList'
 
 export function EmployeeIndex() {
-    const [employees, setEmployees] = useState([])
-    const [filterTxt, setFilter] = useState('')
+    const { employees } = useSelector(storeState => storeState.employeeModule)
+    const { filterTxt } = useSelector(storeState => storeState.employeeModule)
 
     useEffect(() => {
-        async function loadEmployees() {
-            try {
-                const data = await employeeService.query(filterTxt)
-                setEmployees(data)
-            } catch (err) {
-                console.log(err)
-            }
-        }
         loadEmployees()
     }, [filterTxt])
 
@@ -27,7 +20,7 @@ export function EmployeeIndex() {
     }
     const debouncedSetFilter = useMemo(() =>
         utilService.debounce((value) => {
-            setFilter(value)
+            setEmployeeFilter(value)
         }, 300), [])
 
     return (
