@@ -28,6 +28,15 @@
             width: 2rem;
             height: 2rem;
         }
+
+        &:hover {
+            scale: 1.05;
+            transition: 1s;
+        }
+
+        &:active {
+            scale: 0.9;
+        }
     }
 }
 
