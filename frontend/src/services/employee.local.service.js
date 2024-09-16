@@ -4,6 +4,7 @@ const STORAGE_KEY = 'employeeDB'
 
 export const employeeService = {
     query,
+    getById,
 }
 
 async function query() {
@@ -15,6 +16,10 @@ async function query() {
         }
         return employees
     } catch (err) { console.log(err)}
+}
+
+async function getById(employeeId) {
+    return await storageService.get(STORAGE_KEY, employeeId)
 }
 
 async function _loadDemoEmployees() {
