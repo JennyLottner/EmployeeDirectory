@@ -25,11 +25,3 @@ async function save(employee) {
 async function remove(employeeId) {
     return httpService.delete(BASE_URL + employeeId)
 }
-
-async function _loadDemoEmployees() {
-    try {
-        const response = await fetch('./src/data/demoEmployees.json')
-        const demoEmployees = await response.json()
-        return demoEmployees
-    } catch (err) { console.log(err) }
-}
