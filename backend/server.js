@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // connect routes to server
-// app.use('/api/employee', employeeRoutes)
+app.use('/api/employee', employeeRoutes)
 
 app.get('/**', (req, res) => {               // other url's
     res.sendFile(path.resolve('public/index.html'))
