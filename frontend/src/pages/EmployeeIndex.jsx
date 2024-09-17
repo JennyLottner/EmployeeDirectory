@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from 'react'
 import { useSelector } from 'react-redux'
+import { useLocation } from 'react-router-dom'
 
 import { utilService } from '../services/util.service'
 import { loadEmployees, setEmployeeFilter } from '../store/actions/employee.actions'
@@ -10,10 +11,15 @@ import { EmployeeList } from '../cmps/EmployeeList'
 export function EmployeeIndex() {
     const { employees } = useSelector(storeState => storeState.employeeModule)
     const { filterTxt } = useSelector(storeState => storeState.employeeModule)
+    const { pathname } = useLocation()
 
-    useEffect(() => {
+    useEffect(() => {  //load employees based on filter
         loadEmployees()
     }, [filterTxt])
+
+    useEffect(() => {  // filter reset on navigation
+        setEmployeeFilter('')
+    }, [pathname])
 
     function onFilter({ target }) {
         debouncedSetFilter(target.value)
