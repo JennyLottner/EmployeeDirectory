@@ -10,7 +10,7 @@ export const employeeService = {
 }
 
 async function query(filterTxt = '') {
-    return httpService.get(BASE_URL, filterTxt)
+    return httpService.get(BASE_URL, {txt: filterTxt})
 }
 
 async function getById(employeeId) {
