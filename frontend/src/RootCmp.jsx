@@ -15,7 +15,7 @@ export function App() {
 
         <Routes>
           <Route path='/' element={<EmployeeIndex />} />
-          <Route path='/:employeeId' element={<EmployeeDetails />} />
+          <Route path='/employee/:employeeId' element={<EmployeeDetails />} />
         </Routes>
       </Router>
     </Provider>

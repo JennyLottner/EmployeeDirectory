@@ -17,7 +17,7 @@ export function EmployeePreview({ employee, filterTxt = '' }) {
 
     return (
         <li key={employee._id}>
-            <NavLink to={`/${employee._id}`} className="employee-preview grid" >
+            <NavLink to={`/employee/${employee._id}`} className="employee-preview grid" >
                 <img src={employee.imgUrl} alt={employee.name} />
                 <strong>{highlightText(employee.name)}</strong>
                 <p>{highlightText(employee.workTitle)}</p>
