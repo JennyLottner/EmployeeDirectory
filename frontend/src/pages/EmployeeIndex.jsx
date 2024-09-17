@@ -24,6 +24,7 @@ export function EmployeeIndex() {
     function onFilter({ target }) {
         debouncedSetFilter(target.value)
     }
+    
     const debouncedSetFilter = useMemo(() =>
         utilService.debounce((value) => {
             setEmployeeFilter(value)
