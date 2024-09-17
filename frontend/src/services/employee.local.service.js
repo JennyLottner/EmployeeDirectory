@@ -31,11 +31,8 @@ async function getById(employeeId) {
 }
 
 async function save(employee) {
-    if (employee._id) {
-        return await storageService.put(STORAGE_KEY, employee)
-    } else {
-        return await storageService.post(STORAGE_KEY, employee)
-    }
+    if (employee._id) return await storageService.put(STORAGE_KEY, employee)
+    else return await storageService.post(STORAGE_KEY, employee)
 }
 
 async function remove(employeeId) {
