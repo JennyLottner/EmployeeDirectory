@@ -13,6 +13,16 @@ export async function loadEmployees() {
     }
 }
 
+export async function loadEmployeeById(employeeId) {
+    try {
+        const employee = await employeeService.getById(employeeId)
+        return employee
+    } catch (err) {
+        console.log(err)
+        throw err
+    }
+}
+
 export function setEmployeeFilter(filterTxt = '') {
     store.dispatch({ type: SET_FILTER, filterTxt })
     return Promise.resolve(filterTxt)

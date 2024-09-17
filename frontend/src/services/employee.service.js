@@ -18,7 +18,7 @@ async function getById(employeeId) {
 }
 
 async function save(employee) {
-    if (stay._id) return httpService.put(BASE_URL + employee._id, employee)
+    if (employee._id) return httpService.put(BASE_URL + employee._id, employee)
     else return httpService.post(BASE_URL, employee)
 }
 
