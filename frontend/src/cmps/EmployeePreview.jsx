@@ -10,9 +10,9 @@ export function EmployeePreview({ employee }) {
         const regex = new RegExp(`(${filterTxt})`, 'i')
         const parts = text.split(regex)
 
-        return parts.map(part =>
+        return parts.map((part, idx) =>
             part.toLowerCase() === filterTxt.toLowerCase()
-                ? <mark>{part}</mark>
+                ? <mark key={idx}>{part}</mark>
                 : part
         )
     }
