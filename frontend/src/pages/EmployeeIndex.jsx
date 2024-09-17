@@ -6,7 +6,7 @@ import { utilService } from '../services/util.service'
 import { loadEmployees, setEmployeeFilter } from '../store/actions/employee.actions'
 
 import { SearchBar } from '../cmps/SearchBar'
-import { EmployeeList } from '../cmps/EmployeeList'
+import { AutocompleteList } from '../cmps/AutocompleteList'
 import { ResultsList } from '../cmps/ResultsList'
 
 export function EmployeeIndex() {
@@ -61,7 +61,7 @@ export function EmployeeIndex() {
             {isResultsOpen && <h1>Search results</h1>}
             {!isResultsOpen && <p>Click on the search bar to learn our suggestions</p>}
             <SearchBar onFilter={onFilter} ref={searchRef} onSearch={onSearch}/>
-            {isDropDownOpen && <EmployeeList employees={employees} filterTxt={filterTxt} ref={dropdownRef} />}
+            {isDropDownOpen && <AutocompleteList employees={employees} filterTxt={filterTxt} ref={dropdownRef} />}
             {isResultsOpen && <ResultsList employees={employees} />}
         </section>
     )

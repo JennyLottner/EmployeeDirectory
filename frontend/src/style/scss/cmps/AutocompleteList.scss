@@ -30,7 +30,7 @@
     }
 }
 
-.employee-list-section {
+.autocomplete-list-section {
     width: calc(90% - 2.85rem);
     height: fit-content;
     border-radius: 0 0 1rem 1rem;
@@ -44,13 +44,13 @@
 }
 
 @media (width > 500px) {
-    .employee-list-section {
+    .autocomplete-list-section {
         width: calc(60% - 2.85rem);
     }
 }
 
 @media (width > 767px) {
-    .employee-list-section {
+    .autocomplete-list-section {
         width: calc(50% - 2.85rem);
         max-width: 28.4rem;
     }
