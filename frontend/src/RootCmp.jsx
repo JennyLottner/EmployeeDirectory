@@ -3,8 +3,9 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import './style/main.css'
 
-import { EmployeeIndex } from './pages/EmployeeIndex'
 import { AppHeader } from './cmps/AppHeader'
+import { EmployeeIndex } from './pages/EmployeeIndex'
+import { EmployeeDetails } from './pages/EmployeeDetails'
 
 export function App() {
   return (
@@ -14,7 +15,7 @@ export function App() {
 
         <Routes>
           <Route path='/' element={<EmployeeIndex />} />
-          {/* <Route path='/:employeeId' element={<EmployeeDetails />} /> */}
+          <Route path='/:employeeId' element={<EmployeeDetails />} />
         </Routes>
       </Router>
     </Provider>
