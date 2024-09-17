@@ -1,4 +1,4 @@
-import { employeeService } from '../../services/employee.local.service'
+import { employeeService } from '../../services/employee.service'
 import { ADD_EMPLOYEE, REMOVE_EMPLOYEE, SET_FILTER, SET_EMPLOYEES, UPDATE_EMPLOYEE } from "../reducers/employee.reducer"
 import { store } from "../store"
 
