@@ -7,20 +7,24 @@ import { loadEmployees, setEmployeeFilter } from '../store/actions/employee.acti
 
 import { SearchBar } from '../cmps/SearchBar'
 import { EmployeeList } from '../cmps/EmployeeList'
+import { ResultsList } from '../cmps/ResultsList'
 
 export function EmployeeIndex() {
     const { employees } = useSelector(storeState => storeState.employeeModule)
     const { filterTxt } = useSelector(storeState => storeState.employeeModule)
     const { pathname } = useLocation()
-
-    const [isOpen, setIsOpen] = useState(false)
+    const [isResultsOpen, setIsResultsOpen] = useState(false)
+    const [isDropDownOpen, setIsDropDownOpen] = useState(false)
     const searchRef = useRef(null)
     const dropdownRef = useRef(null)
 
     useEffect(() => {   // open and shut list element
         function handleClick(event) {
-            if (searchRef.current && searchRef.current.contains(event.target)) setIsOpen(true)
-            else if (!dropdownRef.current || !dropdownRef.current.contains(event.target)) setIsOpen(false)
+            if (searchRef.current && searchRef.current.contains(event.target)) {
+                setIsResultsOpen(false)
+                setIsDropDownOpen(true)
+            }
+            else if (!dropdownRef.current || !dropdownRef.current.contains(event.target)) setIsDropDownOpen(false)
         }
         document.addEventListener('mousedown', handleClick)
         return () => {
@@ -45,12 +49,20 @@ export function EmployeeIndex() {
             setEmployeeFilter(value)
         }, 300), [])
 
+    function onSearch(ev) {
+        ev.preventDefault()
+        setIsDropDownOpen(false)
+        setIsResultsOpen(true)
+    }
+
     return (
         <section className='search-page flex column center'>
-            <h1>Looking for an employee?</h1>
-            <p>Click on the search bar to learn our suggestions</p>
-            <SearchBar onFilter={onFilter} ref={searchRef} />
-            {isOpen && <EmployeeList employees={employees} ref={dropdownRef} />}
+            {!isResultsOpen && <h1>Looking for an employee?</h1>}
+            {isResultsOpen && <h1>Search results</h1>}
+            {!isResultsOpen && <p>Click on the search bar to learn our suggestions</p>}
+            <SearchBar onFilter={onFilter} ref={searchRef} onSearch={onSearch}/>
+            {isDropDownOpen && <EmployeeList employees={employees} filterTxt={filterTxt} ref={dropdownRef} />}
+            {isResultsOpen && <ResultsList employees={employees} />}
         </section>
     )
 }

@@ -1,8 +1,6 @@
-import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
-export function EmployeePreview({ employee }) {
-    const { filterTxt } = useSelector(storeState => storeState.employeeModule)
+export function EmployeePreview({ employee, filterTxt = '' }) {
 
     function highlightText(text) {
         if (!filterTxt || filterTxt.length <= 1) return text

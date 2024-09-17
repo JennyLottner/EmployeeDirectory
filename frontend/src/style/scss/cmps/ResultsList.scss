@@ -1,0 +1,23 @@
+.results-list-section {
+    width: 90%;
+    height: fit-content;
+    border-radius: 1rem;
+    margin-block-start: 1rem;
+
+    .employee-list {
+        max-height: calc(100vh - 17rem);
+    }
+}
+
+@media (width > 500px) {
+    .results-list-section {
+        width: 75%;
+    }
+}
+
+@media (width > 767px) {
+    .results-list-section {
+        width: 60%;
+        max-width: 110rem;
+    }
+}
