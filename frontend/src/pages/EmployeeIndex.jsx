@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation } from 'react-router-dom'
 
@@ -13,6 +13,21 @@ export function EmployeeIndex() {
     const { filterTxt } = useSelector(storeState => storeState.employeeModule)
     const { pathname } = useLocation()
 
+    const [isOpen, setIsOpen] = useState(false)
+    const searchRef = useRef(null)
+    const dropdownRef = useRef(null)
+
+    useEffect(() => {   // open and shut list element
+        function handleClick(event) {
+            if (searchRef.current && searchRef.current.contains(event.target)) setIsOpen(true)
+            else if (!dropdownRef.current || !dropdownRef.current.contains(event.target)) setIsOpen(false)
+        }
+        document.addEventListener('mousedown', handleClick)
+        return () => {
+            document.removeEventListener('mousedown', handleClick)
+        }
+    }, [])
+
     useEffect(() => {  //load employees based on filter
         loadEmployees()
     }, [filterTxt])
@@ -24,7 +39,7 @@ export function EmployeeIndex() {
     function onFilter({ target }) {
         debouncedSetFilter(target.value)
     }
-    
+
     const debouncedSetFilter = useMemo(() =>
         utilService.debounce((value) => {
             setEmployeeFilter(value)
@@ -34,8 +49,8 @@ export function EmployeeIndex() {
         <section className='search-page flex column center'>
             <h1>Looking for an employee?</h1>
             <p>Click on the search bar to learn our suggestions</p>
-            <SearchBar onFilter={onFilter} />
-            <EmployeeList employees={employees} />
+            <SearchBar onFilter={onFilter} ref={searchRef} />
+            {isOpen && <EmployeeList employees={employees} ref={dropdownRef} />}
         </section>
     )
 }
