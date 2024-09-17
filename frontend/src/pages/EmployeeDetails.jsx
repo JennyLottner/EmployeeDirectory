@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { NavLink } from 'react-router-dom'
 
-import { employeeService } from '../services/employee.local.service'
+import { loadEmployeeById } from '../store/actions/employee.actions'
 
 export function EmployeeDetails() {
     const { employeeId } = useParams()
@@ -11,7 +11,7 @@ export function EmployeeDetails() {
 useEffect(() => {
   async function loadEmployee(employeeId) { 
       try {
-          const employee = await employeeService.getById(employeeId)
+          const employee = await loadEmployeeById(employeeId)
           setEmployee(employee) 
       } catch (err) {
           console.log(err)
