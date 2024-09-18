@@ -2,24 +2,28 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { NavLink } from 'react-router-dom'
 
-import { loadEmployeeById } from '../store/actions/employee.actions'
+import { loadEmployeeById, setEmployeeFilter } from '../store/actions/employee.actions'
 
 export function EmployeeDetails() {
     const { employeeId } = useParams()
     const [employee, setEmployee] = useState()
 
-useEffect(() => {
-  async function loadEmployee(employeeId) { 
-      try {
-          const employee = await loadEmployeeById(employeeId)
-          setEmployee(employee) 
-      } catch (err) {
-          console.log(err)
-          throw err
-      }
-  }
-  loadEmployee(employeeId)
-}, [employeeId])
+    useEffect(() => {
+        setEmployeeFilter('')
+    }, [employeeId])
+
+    useEffect(() => {
+        async function loadEmployee(employeeId) {
+            try {
+                const employee = await loadEmployeeById(employeeId)
+                setEmployee(employee)
+            } catch (err) {
+                console.log(err)
+                throw err
+            }
+        }
+        loadEmployee(employeeId)
+    }, [employeeId])
 
     return (
         <section className="details-page flex column center">
