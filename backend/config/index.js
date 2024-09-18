@@ -1,14 +1,9 @@
-import configEnv from './env.js'
+import dotenv from 'dotenv'
+dotenv.config()
 
-export var config
-
-if (process.env.NODE_ENV === 'production') {
-    config = {
-      dbURL: process.env.DB_URL || configEnv.dbURL,
-      dbName: process.env.DB_NAME || configEnv.dbName
-    }
-  } else {
-    config = { ...configEnv }
-  }
+export var config = {
+  dbURL: process.env.DB_URL,
+  dbName: process.env.DB_NAME
+}
 
 config.isGuestMode = true
