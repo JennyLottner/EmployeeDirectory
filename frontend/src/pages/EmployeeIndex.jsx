@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { useLocation } from 'react-router-dom'
 
 import { utilService } from '../services/util.service'
 import { loadEmployees, setEmployeeFilter } from '../store/actions/employee.actions'
@@ -11,6 +12,7 @@ import { ResultsList } from '../cmps/ResultsList'
 export function EmployeeIndex() {
     const { employees } = useSelector(storeState => storeState.employeeModule)
     const { filterTxt } = useSelector(storeState => storeState.employeeModule)
+    const { pathname } = useLocation()
     const [isResultsOpen, setIsResultsOpen] = useState(false)
     const [isDropDownOpen, setIsDropDownOpen] = useState(false)
     const searchRef = useRef(null)
@@ -34,9 +36,9 @@ export function EmployeeIndex() {
         loadEmployees()
     }, [filterTxt])
 
-    useEffect(() => {  // filter reset on mount
+    useEffect(() => {  // filter reset on navigation
         setEmployeeFilter('')
-    }, [])
+    }, [pathname])
 
     function onFilter({ target }) {
         debouncedSetFilter(target.value)
