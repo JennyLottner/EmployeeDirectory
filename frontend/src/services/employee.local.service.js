@@ -16,7 +16,7 @@ async function query(filterTxt = '') {
             employees = await _loadDemoEmployees()
             storageService.saveToStorage(STORAGE_KEY, employees)
         }
-        if (filterTxt) {
+        if (filterTxt && filterTxt.length >=2) {
             const regExp = new RegExp(filterTxt, 'i')
             employees = employees.filter(employee =>
                 regExp.test(employee.name) || regExp.test(employee.workTitle)

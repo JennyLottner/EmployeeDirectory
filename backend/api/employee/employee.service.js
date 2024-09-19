@@ -15,7 +15,7 @@ async function query(filterTxt) {
     try {
         const criteria = {}
 
-        if (filterTxt) {
+        if (filterTxt && filterTxt.length >=2) {
             const regExp = new RegExp(filterTxt, 'i')
             criteria.$or = [
                 { name: regExp },
