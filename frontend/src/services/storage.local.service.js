@@ -9,11 +9,13 @@ export const storageService = {
     saveToStorage
 }
 
+// Retrieves all entities of a specified type from local storage
 function query(entityType) {
     var entities = _loadFromStorage(entityType)
     return Promise.resolve(entities)
 }
 
+// Retrieves a single entity by ID from local storage
 async function get(entityType, entityId) {
     try {
         const entities = await query(entityType)
@@ -28,6 +30,7 @@ async function get(entityType, entityId) {
     }
 }
 
+// Adds a new entity to the local storage after generating a unique ID
 async function post(entityType, newEntity) {
     try {
         newEntity = { ...newEntity }
@@ -43,6 +46,7 @@ async function post(entityType, newEntity) {
     }
 }
 
+// Updates an existing entity in the local storage
 async function put(entityType, updatedEntity) {
     try {
         const entities = await query(entityType)
@@ -57,6 +61,7 @@ async function put(entityType, updatedEntity) {
     }
 }
 
+// Removes an entity from the local storage
 async function remove(entityType, entityId) {
     try {
         const entities = await query(entityType)
@@ -70,15 +75,18 @@ async function remove(entityType, entityId) {
     }
 }
 
+// Saves data to local storage under a specified key
 function saveToStorage(key, value) {
     localStorage.setItem(key, JSON.stringify(value) || null)
 }
 
+// Loads data from local storage for a specified key
 function _loadFromStorage(key) {
     let data = localStorage.getItem(key)
     return data ? JSON.parse(data) : null
 }
 
+// Removes data from local storage for a specified key
 function _removeFromStorage(key) {
     localStorage.removeItem(key)
 }

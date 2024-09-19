@@ -3,6 +3,7 @@ export const utilService = {
     debounce,
 }
 
+// Generates a random string of 12 characters from a set of letters and digits
 function makeId() {
     var text = ''
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -12,6 +13,8 @@ function makeId() {
     return text
 }
 
+// Returns a debounced version of the given function. The function will be called
+// only after the specified timeout period has elapsed since the last call
 function debounce(func, timeout = 300) {
     let timer
     return (...args) => {
