@@ -7,14 +7,15 @@ import cookieParser from 'cookie-parser'
 import { logger } from './services/logger.service.js'
 import { employeeRoutes } from './api/employee/employee.routes.js'
 
-// create server
+// Create an HTTP server using the Express application
 const app = express()
 const server = http.createServer(app)
 
+// Middleware cookies or JSON
 app.use(cookieParser())
 app.use(express.json())
 
-// cors url validation
+// Configure CORS (Cross-Origin Resource Sharing)
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve('public')))
 } else {
@@ -31,14 +32,14 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
-// connect routes to server
+// Connect API routes to the server
 app.use('/api/employee', employeeRoutes)
 
 app.get('/**', (req, res) => {               // other url's
     res.sendFile(path.resolve('public/index.html'))
 })
 
-// connect server to port
+// Start the server and listen on the specified port
 const port = process.env.PORT || 3030
 server.listen(port, () => {
     logger.info('Server is running on port: ' + port)

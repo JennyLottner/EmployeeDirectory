@@ -9,6 +9,7 @@ export const dbService = {
 
 var dbConn = null
 
+// Get a reference to a MongoDB collection
 async function getCollection(collectionName) {
     try {
         const db = await connect()
@@ -20,6 +21,7 @@ async function getCollection(collectionName) {
     }
 }
 
+// Establish and cache a connection to the MongoDB database
 async function connect() {
     if (dbConn) return dbConn
     try {

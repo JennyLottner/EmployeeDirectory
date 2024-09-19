@@ -1,6 +1,7 @@
 import { employeeService } from './employee.service.js'
 import { logger } from '../../services/logger.service.js'
 
+// Handle GET requests to retrieve a list of employees with optional filtering
 export async function getEmployees(req, res) {
     try {
         const filterTxt = req.query.txt
@@ -14,6 +15,7 @@ export async function getEmployees(req, res) {
     }
 }
 
+// Handle GET requests to retrieve a single employee by ID
 export async function getEmployeeById(req, res) {
     try {
         const employeeId = req.params.id
@@ -25,6 +27,7 @@ export async function getEmployeeById(req, res) {
     }
 }
 
+// Handle POST requests to add a new employee
 export async function addEmployee(req, res) {
     try {
         const employee = req.body
@@ -36,6 +39,7 @@ export async function addEmployee(req, res) {
     }
 }
 
+// Handle PUT requests to update an existing employee
 export async function updateEmployee(req, res) {
     try {
         const employee = req.body
@@ -47,6 +51,7 @@ export async function updateEmployee(req, res) {
     }
 }
 
+// Handle DELETE requests to remove an employee by ID
 export async function removeEmployee(req, res) {
     try {
         const employeeId = req.params.id
