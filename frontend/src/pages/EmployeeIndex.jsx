@@ -10,15 +10,18 @@ import { AutocompleteList } from '../cmps/AutocompleteList'
 import { ResultsList } from '../cmps/ResultsList'
 
 export function EmployeeIndex() {
+    const { pathname } = useLocation()
+    // Retrieve states from Redux store
     const { employees } = useSelector(storeState => storeState.employeeModule)
     const { filterTxt } = useSelector(storeState => storeState.employeeModule)
-    const { pathname } = useLocation()
+    // Component state and refs to manage dropdown and results visibility
     const [isResultsOpen, setIsResultsOpen] = useState(false)
     const [isDropDownOpen, setIsDropDownOpen] = useState(false)
     const searchRef = useRef(null)
     const dropdownRef = useRef(null)
 
-    useEffect(() => {   // open and shut list element
+    // Handle clicks outside the search bar and dropdown
+    useEffect(() => {
         function handleClick(event) {
             if (searchRef.current && searchRef.current.contains(event.target)) {
                 setIsResultsOpen(false)
@@ -32,23 +35,28 @@ export function EmployeeIndex() {
         }
     }, [])
 
-    useEffect(() => {  //load employees based on filter
+    // Load employees based on filter
+    useEffect(() => {
         loadEmployees()
     }, [filterTxt])
 
-    useEffect(() => {  // filter reset on navigation
+    // Reset the filter on route change
+    useEffect(() => {
         setEmployeeFilter('')
     }, [pathname])
 
+    // Handler for updating the filter text with debounce
     function onFilter({ target }) {
         debouncedSetFilter(target.value)
     }
 
+    // Debounced function to set the filter, reducing the number of filter updates
     const debouncedSetFilter = useMemo(() =>
         utilService.debounce((value) => {
             setEmployeeFilter(value)
         }, 300), [])
 
+    // Handler for initiating search and toggling result visibility
     function onSearch(ev) {
         ev.preventDefault()
         setIsDropDownOpen(false)
@@ -60,7 +68,7 @@ export function EmployeeIndex() {
             {!isResultsOpen && <h1>Looking for an employee?</h1>}
             {isResultsOpen && <h1>Search results</h1>}
             {!isResultsOpen && <p>Click on the search bar to learn our suggestions</p>}
-            <SearchBar onFilter={onFilter} ref={searchRef} onSearch={onSearch}/>
+            <SearchBar onFilter={onFilter} ref={searchRef} onSearch={onSearch} />
             {isDropDownOpen && <AutocompleteList employees={employees} filterTxt={filterTxt} ref={dropdownRef} />}
             {isResultsOpen && <ResultsList employees={employees} />}
         </section>

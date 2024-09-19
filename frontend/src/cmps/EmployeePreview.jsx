@@ -2,13 +2,14 @@ import { NavLink } from 'react-router-dom'
 
 export function EmployeePreview({ employee, filterTxt = '' }) {
 
+    // Function to highlight text that matches the filter text
     function highlightText(text) {
         if (!filterTxt || filterTxt.length <= 1) return text
 
-        const regex = new RegExp(`(${filterTxt})`, 'i')
-        const parts = text.split(regex)
+        const regex = new RegExp(`(${filterTxt})`, 'i') // Find instances of the filter text
+        const parts = text.split(regex)  // Split text into array with filter text separated
 
-        return parts.map((part, idx) =>
+        return parts.map((part, idx) =>  // Map through text parts, highlighting the ones that match
             part.toLowerCase() === filterTxt.toLowerCase()
                 ? <mark key={idx}>{part}</mark>
                 : part

@@ -2,6 +2,7 @@ import { forwardRef } from "react"
 
 export const SearchBar = forwardRef(({onFilter, onSearch}, ref) => {
 
+    // Render search bar with an input field and a submit button
     return (
         <form className="search-bar flex align-center" onSubmit={onSearch} autoComplete="off">
             <input type="text" placeholder="Search..." onInput={onFilter} name="txt" ref={ref}/>

@@ -3,6 +3,7 @@ import { EmployeePreview } from "./EmployeePreview";
 
 export const AutocompleteList = forwardRef(({ employees, filterTxt }, ref) => {
 
+    // Map through employees and render an EmployeePreview for each
     return (
         <section className="list-section autocomplete-list-section"  ref={ref}>
             <ul className="employee-list flex column">

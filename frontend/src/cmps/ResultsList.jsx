@@ -2,6 +2,7 @@ import { EmployeePreview } from "./EmployeePreview";
 
 export function ResultsList({ employees }) {
 
+    // Map through employees and render an EmployeePreview for each
     return (
         <section className="list-section results-list-section">
             <ul className="employee-list flex column">

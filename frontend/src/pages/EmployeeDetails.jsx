@@ -5,13 +5,15 @@ import { NavLink } from 'react-router-dom'
 import { loadEmployeeById, setEmployeeFilter } from '../store/actions/employee.actions'
 
 export function EmployeeDetails() {
-    const { employeeId } = useParams()
-    const [employee, setEmployee] = useState()
+    const { employeeId } = useParams()  // Retrieve employeeId from URL parameters
+    const [employee, setEmployee] = useState() // State to hold the employee details
 
+    // Reset the employee filter when employeeId changes
     useEffect(() => {
         setEmployeeFilter('')
     }, [employeeId])
 
+    // Load employee details based on employeeId
     useEffect(() => {
         async function loadEmployee(employeeId) {
             try {
